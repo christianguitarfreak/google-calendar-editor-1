@@ -99,7 +99,7 @@ public class CalendarEditor
 
         // TODO: Add a command line arg to set the update period instead of hard-coding to 3 days
         EventUpdater eventUpdater = new EventUpdater(calendarClient, selectedCalendars, THREE_DAYS_IN_MS);
-// BY COMMENINT OUT LINES 103, 104, and 106, the program doesn't loop. Then the user can use Crontab or Google Console to run program when needed.
+// BY COMMENTING OUT LINES 103, 104, and 106, the program doesn't loop. Then the user can use Crontab or Google Console to run program when needed.
      //   executorService.scheduleAtFixedRate(() -> {
      //       logger.info("Running update thread.");
             eventUpdater.updateEvents();
